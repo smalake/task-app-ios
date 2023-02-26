@@ -6,19 +6,26 @@ import {
   SettingActions,
   SettingReducer,
 } from './modules/Settings';
+import {
+  TaskState,
+  initialState as taskInitialState,
+  TaskReducer,
+} from './modules/Tasks';
 
 /**
  * アプリ全体のState
  */
 export class RootState {
-    setting: SettingState = settingInitialState;
+  setting: SettingState = settingInitialState;
+  task: TaskState = taskInitialState;
 }
 
 /**
  * 各modulesで生成したReducerを結合
  */
 const reducer = combineReducers<RootState>({
-    setting: SettingReducer,
+  setting: SettingReducer,
+  task: TaskReducer,
 });
 
 /**

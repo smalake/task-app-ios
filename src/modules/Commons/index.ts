@@ -4,11 +4,4 @@ import CommonTextInput from './components/CommonTextInput';
 import BlurContent from './components/BlurContent';
 import Main from './components/Main';
 
-export {
-    BlurContent,
-    Fab,
-    FabWrap,
-    CommonButton,
-    CommonTextInput,
-    Main
-}
+export {BlurContent, Fab, FabWrap, CommonButton, CommonTextInput, Main};
